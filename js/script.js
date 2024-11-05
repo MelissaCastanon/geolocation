@@ -1,6 +1,6 @@
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", () => {
-    const API_GEOLOCATION_URL = '//54.85.200.247/geolocation/index.php';
+    const API_GEOLOCATION_URL = '//3.89.28.32/geolocation/index.php';
 
     // Referencia al tbody de la tabla
     const tbody = document.querySelector("tbody");
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Función para obtener los datos de geolocalización
     const obtenerDatosGeolocalizacion = async () => {
         try {
-            const response = await fetch("http://54.85.200.247/geolocation/index.php"); // Hacer petición a la API
+            const response = await fetch("http://3.89.28.32/geolocation/index.php"); // Hacer petición a la API
             const data = await response.json(); // Convertir respuesta a JSON
 
             // Limpiar el tbody
